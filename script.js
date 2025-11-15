@@ -15,28 +15,27 @@ let arraye = ["stone", "paper", "scissor"];
 
 let arrlen = arraye.length;
 
-
-function start(val) {
+function start(Player) {
     let result = Math.floor(Math.random() * arrlen);
 
-    option = arraye[result];
+    Computer = arraye[result];
 
-    // console.log(val);
-    // console.log(option);
+    // console.log(Player);
+    // console.log(Computer);
 
-    left.innerText = val;
-    right.innerText = option;
+    left.innerText = Player;
+    right.innerText = Computer;
 
-    if (val == "scissor" && option == "paper" ||
-        val == "stone" && option == "scissor" ||
-        val == "stone" && option == "paper") {
+    if (Player == "scissor" && Computer == "paper" ||
+        Player == "stone" && Computer == "scissor" ||
+        Player == "stone" && Computer == "paper") {
 
         console.log("you win");
         msg.innerText ="you win!!!";
         win = win+1;
         wincount.innerHTML = win;
     }
-    else if (val === option) {
+    else if (Player === Computer) {
         console.log("you dron");
          msg.innerText ="you dron";
         dron = dron+1;
