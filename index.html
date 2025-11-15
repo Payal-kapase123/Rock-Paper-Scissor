@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenar">
+        <div class="inner-contenar">
+            <h1 style="color: red;">Stone Paper Scissor</h1>
+            <div class="main-box">
+                <h2 style="color: blueviolet;">you select your weapan</h2>
+                <div class="inner-box">
+                    <button onclick="start('stone')">stone</button>
+                    <button onclick="start('paper')">Paper</button>
+                    <button onclick="start('scissor')">scissor</button>
+                </div>
+            </div>
+            <div class="result-box">
+                <h2 style="color:green;" id="msg">Play the game</h2>
+                <div class="camparisan-box">
+                    <h3  style="color: blueviolet;" id="left-side">Player</h3>
+                    <h3  style="color: blueviolet;" id="right-side">Computer</h3>
+                </div>
+            </div>
+
+
+            <div class="count-box">
+                <div class="result">Win :<span id="win">0</span></div>
+                <div class="result">drow :<span id="dron">0</span></div>
+                <div class="result">Loose :<span id="loose">0</span></div>
+            </div>
+            <button style="background-color: green;" onclick="reStart()">ReStart game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
